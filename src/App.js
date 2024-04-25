@@ -1,14 +1,14 @@
 import { useEffect } from 'react';
 import './App.css';
 const tg = window.Telegram.WebApp;
-function App() {
 
+function App() {
   useEffect(() => {
-    tg.ready()
-  }, [])
+    tg.ready();
+  }, []);
 
   const onClose = () => {
-    tg.cloce()
+    tg.close();
   }
 
   return (
