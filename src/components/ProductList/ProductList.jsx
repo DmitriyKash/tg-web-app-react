@@ -31,13 +31,13 @@ const ProductList = () => {
             totalPrice: getTotalPrice(addedItems),
             queryId,
         }
-        fetch('https://13.53.197.228:8000/web-data', {
+        fetch('http://13.53.197.228:8000/web-data', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data)
-        })
+            });
     }, [addedItems])
 
     useEffect(() => {
